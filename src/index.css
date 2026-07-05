@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;700&family=Space+Grotesk:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-serif: "Playfair Display", serif;
+
+  --animate-aurora-spin: spin 20s linear infinite;
+  --animate-aurora-spin-reverse: spin-reverse 28s linear infinite;
+  --animate-liquid-float: liquid-float 14s ease-in-out infinite;
+  --animate-retro-grid: retro-grid 2s linear infinite;
+  --animate-scanline: scanline 8s linear infinite;
+  --animate-sheen: sheen 5s linear infinite;
+}
+
+@keyframes spin-reverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes liquid-float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(40px, -30px) scale(1.15); }
+}
+
+@keyframes retro-grid {
+  from { background-position: 0 0; }
+  to { background-position: 0 40px; }
+}
+
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+@keyframes sheen {
+  0% { transform: translateX(-30%) translateY(-30%) rotate(0deg); }
+  100% { transform: translateX(30%) translateY(30%) rotate(0deg); }
+}
+
+/* Custom styles for physical textures (Q-Morphism) */
+.paper-texture {
+  background:
+    repeating-linear-gradient(0deg, rgba(0,0,0,0.015) 0px, transparent 1px, transparent 2px),
+    #fcf8f2;
+}
+
+.paper-texture-dark {
+  background:
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.01) 0px, transparent 1px, transparent 2px),
+    #1d1b18;
+}
+
+/* Custom styled scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Liquid glass SVG filter setup */
+.liquid-glass-filter {
+  filter: url(#liquid-distort-filter);
+}
+
+/* Scanlines overlay */
+.scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  );
+  background-size: 100% 4px;
+}
