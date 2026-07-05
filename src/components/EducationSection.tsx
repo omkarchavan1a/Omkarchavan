@@ -138,7 +138,7 @@ export default function EducationSection({ theme }: EducationSectionProps) {
           </h2>
         </div>
         <p className="text-slate-400 text-sm max-w-md">
-          A history of computational knowledge and academic records compiled from Pune University.
+          A history of computational knowledge and academic records compiled from affiliated universities.
         </p>
       </div>
 

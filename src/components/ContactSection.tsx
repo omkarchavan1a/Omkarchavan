@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Github, Send, CheckCircle, Copy, AlertCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Instagram, Send, CheckCircle, Copy, AlertCircle } from 'lucide-react';
 import { PortfolioTheme } from '../types';
 import { contactInfo } from '../data';
 
@@ -175,10 +175,48 @@ export default function ContactSection({ theme }: ContactSectionProps) {
                   <p className="text-sm font-semibold">{contactInfo.location}</p>
                 </div>
               </div>
+
+              <div className="flex items-start gap-4">
+                <div className={`p-2.5 rounded-xl border ${
+                  theme === 'NEOBRUTALISM' ? 'border-2 border-black bg-sky-300 text-black' : 'border-slate-800/80 bg-slate-950/40 text-sky-400'
+                }`}>
+                  <Linkedin className="w-5 h-5" />
+                </div>
+                <div className="space-y-1">
+                  <p className="text-xs text-slate-500 font-bold uppercase tracking-wider">LinkedIn Network</p>
+                  <a 
+                    href={`https://${contactInfo.linkedin}`} 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    className="text-sm font-semibold hover:underline text-sky-400 hover:text-white transition-colors break-all"
+                  >
+                    {contactInfo.linkedin}
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className={`p-2.5 rounded-xl border ${
+                  theme === 'NEOBRUTALISM' ? 'border-2 border-black bg-pink-300 text-black' : 'border-slate-800/80 bg-slate-950/40 text-pink-400'
+                }`}>
+                  <Instagram className="w-5 h-5" />
+                </div>
+                <div className="space-y-1">
+                  <p className="text-xs text-slate-500 font-bold uppercase tracking-wider">Instagram</p>
+                  <a 
+                    href={`https://${contactInfo.instagram}`} 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    className="text-sm font-semibold hover:underline text-pink-400 hover:text-white transition-colors break-all"
+                  >
+                    @{contactInfo.instagram.split('/').pop()}
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div className="pt-6 border-t border-slate-800/40 mt-8">
+          <div className="pt-6 border-t border-slate-800/40 mt-8 flex flex-wrap gap-3">
             <a
               href={`https://${contactInfo.github}`}
               target="_blank"
@@ -190,6 +228,30 @@ export default function ContactSection({ theme }: ContactSectionProps) {
               }`}
             >
               <Github className="w-4 h-4" /> View GitHub Repository
+            </a>
+            <a
+              href={`https://${contactInfo.linkedin}`}
+              target="_blank"
+              rel="noreferrer referrer"
+              className={`inline-flex items-center gap-2 text-xs font-bold py-2.5 px-4 rounded-xl border transition-all duration-300 ${
+                theme === 'NEOBRUTALISM'
+                  ? 'bg-blue-600 text-white border-2 border-black shadow-[2px_2px_0_#000]'
+                  : 'bg-sky-950/40 border-sky-800 text-sky-300 hover:text-white hover:border-sky-700 hover:bg-sky-950'
+              }`}
+            >
+              <Linkedin className="w-4 h-4" /> Connect on LinkedIn
+            </a>
+            <a
+              href={`https://${contactInfo.instagram}`}
+              target="_blank"
+              rel="noreferrer referrer"
+              className={`inline-flex items-center gap-2 text-xs font-bold py-2.5 px-4 rounded-xl border transition-all duration-300 ${
+                theme === 'NEOBRUTALISM'
+                  ? 'bg-pink-600 text-white border-2 border-black shadow-[2px_2px_0_#000]'
+                  : 'bg-pink-950/40 border-pink-900/60 text-pink-400 hover:text-white hover:border-pink-700 hover:bg-pink-950'
+              }`}
+            >
+              <Instagram className="w-4 h-4" /> Follow on Instagram
             </a>
           </div>
         </div>

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { X, Mail, Phone, MapPin, Printer, Download, Award, Briefcase, GraduationCap } from 'lucide-react';
+import { X, Mail, Phone, MapPin, Printer, Download, Award, Briefcase, GraduationCap, Linkedin, Instagram } from 'lucide-react';
 import { experiences, educationList, skillCategories, projects, contactInfo } from '../data';
 
 interface ResumeModalProps {
@@ -59,6 +59,18 @@ export default function ResumeModal({ onClose }: ResumeModalProps) {
               </p>
               <p className="flex items-center justify-center md:justify-end gap-1.5">
                 <MapPin className="w-3.5 h-3.5 text-purple-400 print:text-purple-700" /> {contactInfo.location}
+              </p>
+              <p className="flex items-center justify-center md:justify-end gap-1.5">
+                <Linkedin className="w-3.5 h-3.5 text-blue-400 print:text-sky-700" />
+                <a href={`https://${contactInfo.linkedin}`} target="_blank" rel="noreferrer" className="hover:underline">
+                  {contactInfo.linkedin}
+                </a>
+              </p>
+              <p className="flex items-center justify-center md:justify-end gap-1.5">
+                <Instagram className="w-3.5 h-3.5 text-pink-400 print:text-pink-700" />
+                <a href={`https://${contactInfo.instagram}`} target="_blank" rel="noreferrer" className="hover:underline">
+                  {contactInfo.instagram}
+                </a>
               </p>
             </div>
           </div>

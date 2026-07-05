@@ -142,7 +142,7 @@ export default function AboutSection({ theme }: AboutSectionProps) {
         </div>
         
         <div className="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-mono text-emerald-400">
-          <span>Pune University</span>
+          <span>Mysore University</span>
           <span className="bg-emerald-950/50 border border-emerald-900/30 px-2 py-0.5 rounded-full text-[10px] font-bold">
             IN PROGRESS
           </span>

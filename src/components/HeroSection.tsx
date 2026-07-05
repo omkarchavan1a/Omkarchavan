@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { ArrowRight, FileText, Github, Mail, MapPin, Phone, Terminal as TermIcon, Sparkles } from 'lucide-react';
+import { ArrowRight, FileText, Github, Linkedin, Instagram, Mail, MapPin, Phone, Terminal as TermIcon, Sparkles } from 'lucide-react';
 import { PortfolioTheme } from '../types';
 import { contactInfo } from '../data';
 
@@ -67,7 +67,7 @@ export default function HeroSection({ theme, onOpenResume, onScrollToProjects, o
           </div>
 
           {/* Core Info Tags */}
-          <div className="mt-12 pt-8 border-t border-white/10 grid grid-cols-2 md:grid-cols-4 gap-4 text-white/60 text-xs">
+          <div className="mt-12 pt-8 border-t border-white/10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 text-white/60 text-xs">
             <div className="flex items-center justify-center gap-2">
               <MapPin className="w-4 h-4 text-sky-400" /> {contactInfo.location}
             </div>
@@ -78,7 +78,19 @@ export default function HeroSection({ theme, onOpenResume, onScrollToProjects, o
               <Phone className="w-4 h-4 text-purple-400" /> {contactInfo.phone}
             </div>
             <div className="flex items-center justify-center gap-2">
-              <Github className="w-4 h-4 text-yellow-400" /> github.com/omkarchavan1a
+              <a href={`https://${contactInfo.github}`} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
+                <Github className="w-4 h-4 text-yellow-400" /> github.com/omkarchavan1a
+              </a>
+            </div>
+            <div className="flex items-center justify-center gap-2">
+              <a href={`https://${contactInfo.linkedin}`} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
+                <Linkedin className="w-4 h-4 text-blue-400" /> linkedin.com/in/omkarchavan1500
+              </a>
+            </div>
+            <div className="flex items-center justify-center gap-2">
+              <a href={`https://${contactInfo.instagram}`} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
+                <Instagram className="w-4 h-4 text-pink-500" /> instagram.com/omkarchavann_
+              </a>
             </div>
           </div>
         </div>
@@ -123,7 +135,7 @@ export default function HeroSection({ theme, onOpenResume, onScrollToProjects, o
                 location: <span className="text-yellow-300">"Pune, India"</span>,
               </p>
               <p className="pl-6">
-                contact: &#123; email: <span className="text-yellow-300">"{contactInfo.email}"</span>, github: <span className="text-yellow-300">"omkarchavan1a"</span> &#125;
+                contact: &#123; email: <span className="text-yellow-300">"{contactInfo.email}"</span>, github: <span className="text-yellow-300">"omkarchavan1a"</span>, linkedin: <span className="text-yellow-300">"omkarchavan1500"</span>, instagram: <span className="text-yellow-300">"omkarchavann_"</span> &#125;
               </p>
               <p className="text-zinc-400">&#125;;</p>
             </div>
@@ -216,7 +228,15 @@ export default function HeroSection({ theme, onOpenResume, onScrollToProjects, o
             <span className="bg-white px-3 py-1.5 border-2 border-black rounded-none shadow-[2px_2px_0_#000]">📍 {contactInfo.location}</span>
             <span className="bg-white px-3 py-1.5 border-2 border-black rounded-none shadow-[2px_2px_0_#000]">✉️ {contactInfo.email}</span>
             <span className="bg-white px-3 py-1.5 border-2 border-black rounded-none shadow-[2px_2px_0_#000]">📞 {contactInfo.phone}</span>
-            <span className="bg-white px-3 py-1.5 border-2 border-black rounded-none shadow-[2px_2px_0_#000]">💻 github.com/omkarchavan1a</span>
+            <a href={`https://${contactInfo.github}`} target="_blank" rel="noreferrer" className="bg-white px-3 py-1.5 border-2 border-black rounded-none shadow-[2px_2px_0_#000] hover:bg-zinc-100 transition-colors">
+              💻 github.com/omkarchavan1a
+            </a>
+            <a href={`https://${contactInfo.linkedin}`} target="_blank" rel="noreferrer" className="bg-white px-3 py-1.5 border-2 border-black rounded-none shadow-[2px_2px_0_#000] hover:bg-zinc-100 transition-colors">
+              💼 linkedin.com/in/omkarchavan1500
+            </a>
+            <a href={`https://${contactInfo.instagram}`} target="_blank" rel="noreferrer" className="bg-white px-3 py-1.5 border-2 border-black rounded-none shadow-[2px_2px_0_#000] hover:bg-zinc-100 transition-colors">
+              📸 instagram.com/omkarchavann_
+            </a>
           </div>
         </div>
       </div>
@@ -292,10 +312,18 @@ export default function HeroSection({ theme, onOpenResume, onScrollToProjects, o
           </div>
         </div>
 
-        <div className="pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
-          <a href={`https://${contactInfo.github}`} target="_blank" rel="noopener noreferrer" className="hover:text-white flex items-center gap-1.5 font-semibold transition-colors">
-            <Github className="w-4 h-4" /> GitHub Profiling
-          </a>
+        <div className="pt-4 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+          <div className="flex gap-4">
+            <a href={`https://${contactInfo.github}`} target="_blank" rel="noopener noreferrer" className="hover:text-white flex items-center gap-1.5 font-semibold transition-colors">
+              <Github className="w-4 h-4 text-slate-400 hover:text-white" /> GitHub
+            </a>
+            <a href={`https://${contactInfo.linkedin}`} target="_blank" rel="noopener noreferrer" className="hover:text-white flex items-center gap-1.5 font-semibold transition-colors">
+              <Linkedin className="w-4 h-4 text-sky-400 hover:text-white" /> LinkedIn
+            </a>
+            <a href={`https://${contactInfo.instagram}`} target="_blank" rel="noopener noreferrer" className="hover:text-white flex items-center gap-1.5 font-semibold transition-colors">
+              <Instagram className="w-4 h-4 text-pink-500 hover:text-white" /> Instagram
+            </a>
+          </div>
           <span className="opacity-50">Omkar Chavan</span>
         </div>
       </div>

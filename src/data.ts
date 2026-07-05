@@ -9,6 +9,8 @@ export const contactInfo: ContactInfo = {
   email: 'omkarchavan1500@gmail.com',
   phone: '+91 9096518451',
   github: 'github.com/omkarchavan1a',
+  linkedin: 'linkedin.com/in/omkar-chavan-1402ba2a3',
+  instagram: 'instagram.com/omkarchavann_',
   location: 'Pune, India'
 };
 
@@ -35,13 +37,13 @@ export const experiences: Experience[] = [
 export const educationList: Education[] = [
   {
     degree: "Master's in Computer Application (MCA)",
-    institution: 'Pune University affiliate',
+    institution: 'Mysore University affiliate',
     duration: 'Currently Pursuing',
     status: 'In Progress'
   },
   {
     degree: 'Bachelor of Computer Applications (BCA)',
-    institution: 'Pune University affiliate',
+    institution: 'Dahiwadi College, Dahiwadi (Shivaji University affiliate)',
     duration: '2023 — 2025',
     grade: 'Grade: B+'
   },
