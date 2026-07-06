@@ -4,7 +4,7 @@
  */
 
 import { X, Mail, Phone, MapPin, Printer, Download, Award, Briefcase, GraduationCap, Linkedin, Instagram } from 'lucide-react';
-import { experiences, educationList, skillCategories, projects, contactInfo } from '../data';
+import { experiences, educationList, skillCategories, projects, contactInfo, quantifiableImpacts } from '../data';
 
 interface ResumeModalProps {
   onClose: () => void;
@@ -146,6 +146,18 @@ export default function ResumeModal({ onClose }: ResumeModalProps) {
                 </div>
               ))}
             </div>
+          </div>
+
+          {/* Quantifiable Impact */}
+          <div className="space-y-3">
+            <h2 className="text-xs font-bold text-sky-400 uppercase tracking-widest border-b border-slate-800 pb-1.5 print:text-sky-700 print:border-slate-300">
+              Quantifiable Impact
+            </h2>
+            <ul className="list-disc list-inside space-y-1.5 text-xs text-slate-300 pl-2 print:text-black">
+              {quantifiableImpacts.map((impact, idx) => (
+                <li key={idx} className="leading-relaxed">{impact}</li>
+              ))}
+            </ul>
           </div>
 
           {/* Education list */}
