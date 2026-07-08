@@ -123,6 +123,16 @@ export const skillCategories: SkillCategory[] = [
 
 export const projects: Project[] = [
   {
+    id: 'ai-first-crm',
+    title: 'AI-First CRM — HCP Module',
+    category: 'AI / Full Stack',
+    description: 'Developed an AI-driven Customer Relationship Management (CRM) module tailored for Healthcare Professionals (HCPs) to optimize healthcare partner communications, transcribe medical queries with intelligent agents, and deliver next-best-action recommendations.',
+    stack: ['Next.js', 'React', 'Gemini API', 'Tailwind CSS', 'Node.js'],
+    link: 'https://ai-first-crm-hcp-module-production-e31f.up.railway.app/',
+    impact: 'Automates medical representative meeting summarization and tracks regional hospital engagement analytics.',
+    featured: true
+  },
+  {
     id: 'ai-research-gen',
     title: 'AI Research Paper Generator',
     category: 'AI / LLM Tooling',
