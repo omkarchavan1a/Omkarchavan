@@ -18,7 +18,7 @@ export const experiences: Experience[] = [
   {
     role: 'Jr. Software Developer — Data Analytics',
     company: 'BAAP Services Pvt. Ltd.',
-    location: 'Pune, India',
+    location: 'Sangamner, India',
     duration: '2024 — 2025',
     bullets: [
       'Data Pipelines & Reporting: Built and maintained ETL processes to clean, transform, and load data from multiple sources into SQL databases, improving data accuracy and reducing manual reporting effort.',
