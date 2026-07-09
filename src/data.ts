@@ -123,6 +123,16 @@ export const skillCategories: SkillCategory[] = [
 
 export const projects: Project[] = [
   {
+    id: 'ai-b2b-support-hub',
+    title: 'AI-Based B2B Support Hub',
+    category: 'AI / Full Stack',
+    description: 'Engineered an intelligent B2B customer support hub featuring real-time chat, automated ticket triage, AI-generated response suggestions, and SLA performance dashboards.',
+    stack: ['React', 'Node.js', 'Socket.io', 'Gemini API', 'Tailwind CSS'],
+    link: 'https://ai-based-b2b-support-hub-with-real-time-chat-new-one.up.railway.app/',
+    impact: 'Delivers instant AI-driven query resolutions and seamless real-time agent-to-customer collaboration.',
+    featured: true
+  },
+  {
     id: 'ai-first-crm',
     title: 'AI-First CRM — HCP Module',
     category: 'AI / Full Stack',
