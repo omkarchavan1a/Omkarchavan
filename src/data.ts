@@ -128,7 +128,7 @@ export const projects: Project[] = [
     category: 'AI / Full Stack',
     description: 'Engineered an intelligent B2B customer support hub featuring real-time chat, automated ticket triage, AI-generated response suggestions, and SLA performance dashboards.',
     stack: ['React', 'Node.js', 'Socket.io', 'Gemini API', 'Tailwind CSS'],
-    link: 'https://ai-based-b2b-support-hub-with-real-time-chat-new-one.up.railway.app/',
+    link: 'https://github.com/omkarchavan1a/Ai-based-b2b-support-hub-with-real-time-chat-',
     impact: 'Delivers instant AI-driven query resolutions and seamless real-time agent-to-customer collaboration.',
     featured: true
   },
@@ -138,7 +138,7 @@ export const projects: Project[] = [
     category: 'AI / Full Stack',
     description: 'Developed an AI-driven Customer Relationship Management (CRM) module tailored for Healthcare Professionals (HCPs) to optimize healthcare partner communications, transcribe medical queries with intelligent agents, and deliver next-best-action recommendations.',
     stack: ['Next.js', 'React', 'Gemini API', 'Tailwind CSS', 'Node.js'],
-    link: 'https://ai-first-crm-hcp-module-production-e31f.up.railway.app/',
+    link: 'https://github.com/omkarchavan1a/AI-First-CRM-HCP-Module',
     impact: 'Automates medical representative meeting summarization and tracks regional hospital engagement analytics.',
     featured: true
   },
