@@ -129,7 +129,7 @@ export const projects: Project[] = [
     description: 'A high-performance in-browser data engineering and visual analytics application built with React, TypeScript, Tailwind CSS, Recharts, and WebAssembly SQLite',
     stack: ['React', 'Node.js', 'Socket.io', 'sqlite', 'Tailwind CSS'],
     link: 'https://universal-sqlite-bi-studio.vercel.app/',
-    impact: 'Delivers instant AI-driven query resolutions and seamless real-time agent-to-customer collaboration.',
+    impact: 'create a dashboards using a csv file or excel files share with your Clients ',
     featured: true
   },{
     id: 'ai-b2b-support-hub',
